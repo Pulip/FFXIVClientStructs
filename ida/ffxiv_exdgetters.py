@@ -418,7 +418,7 @@ if api is None:
     exit(1)
 
 
-f = open(join(getenv("APPDATA"), "XIVLauncher", "launcherConfigV3.json"), "r")
+f = open(join(getenv("APPDATA"), "XIVLauncherKR", "launcherConfigV3.json"), "r")
 
 config = load(f)
 
