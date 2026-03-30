@@ -7,7 +7,7 @@ namespace FFXIVClientStructs.FFXIV.Client.Game;
 [GenerateInterop]
 [StructLayout(LayoutKind.Explicit, Size = 0x10)]
 public unsafe partial struct GcArmyManager {
-    [StaticAddress("48 8B 05 ?? ?? ?? ?? 0F 29 B4 24 ?? ?? ?? ?? 0F 29 BC 24 ?? ?? ?? ?? 44 0F 29 84 24 ?? ?? ?? ?? 48 85 C0", 3, isPointer: true)]
+    [MemberFunction("E8 ?? ?? ?? ?? 8B 54 2B")]
     public static partial GcArmyManager* Instance();
 
     /// <remarks> Data is loaded on-demand inside GC Barracks </remarks>

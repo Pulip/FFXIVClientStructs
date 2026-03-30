@@ -182,7 +182,7 @@ public unsafe partial struct AtkResNode : ICreatable {
     [MemberFunction("E8 ?? ?? ?? ?? 0F B7 CF 49 89 44 CE")]
     public partial AtkComponentListItemRenderer* GetAsAtkComponentListItemRenderer();
 
-    [MemberFunction("E8 ?? ?? ?? ?? 44 8D 7E")]
+    [MemberFunction("E8 ?? ?? ?? ?? 8D 55 CC")]
     public partial AtkComponentIcon* GetAsAtkComponentIcon();
 
     [MemberFunction("E8 ?? ?? ?? ?? FF C3 48 89 07 48 8D 7F 08 83 FB 10")]
@@ -331,7 +331,7 @@ public unsafe partial struct AtkResNode : ICreatable {
     [MemberFunction("E8 ?? ?? ?? ?? 33 D2 48 8B 8C 24")]
     public partial void SetPriority(ushort priority);
 
-    [MemberFunction("E8 ?? ?? ?? ?? 3C 01 75 7F")]
+    [MemberFunction("E8 ?? ?? ?? ?? 3C ?? 0F 85 ?? ?? ?? ?? C7 83")]
     public partial bool IsVisible();
 
     [MemberFunction("E8 ?? ?? ?? ?? 48 83 C7 08 48 83 EE 01 75 D5 48 8B 4C 24 ??")]

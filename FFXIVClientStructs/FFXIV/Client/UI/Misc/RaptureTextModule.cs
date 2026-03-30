@@ -92,7 +92,7 @@ public unsafe partial struct RaptureTextModule {
 
     /// <summary> Sets global parameters 1, 4, 6 and 65 </summary>
     /// <remarks> The caller must ensure the name pointer remains valid until the subsequent formatting call has processed global parameter 1. </remarks>
-    [MemberFunction("E8 ?? ?? ?? ?? 83 EE 16")]
+    [MemberFunction("E8 ?? ?? ?? ?? 83 EE ?? 74 ?? 83 FE ?? 0F 85")]
     public partial void SetGlobalTempEntity1(CStringPointer name, int sex, uint objStrId);
 
     /// <summary> Sets global parameters 2, 5, 7 and 66 </summary>
