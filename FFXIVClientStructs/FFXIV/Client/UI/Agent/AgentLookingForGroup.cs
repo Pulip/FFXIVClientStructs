@@ -196,10 +196,13 @@ public unsafe partial struct AgentLookingForGroup {
 
     [Flags]
     public enum Language : byte {
-        Japanese = 1,
-        English = 2,
-        German = 4,
-        French = 8,
+        Japanese = 1 << 0,
+        English = 1 << 1,
+        German = 1 << 2,
+        French = 1 << 3,
+        ChineseSimplified = 1 << 4,
+        ChineseTraditional = 1 << 5,
+        Korean = 1 << 6
     }
 
     [Flags]
