@@ -18,11 +18,17 @@ public partial struct SocialListMemberNumberArray {
     public bool EnglishSelected => ((SelectedLanguages >> 1) & 1) == 1;
     public bool GermanSelected => ((SelectedLanguages >> 2) & 1) == 1;
     public bool FrenchSelected => ((SelectedLanguages >> 3) & 1) == 1;
+    public bool ChineseSimplifiedSelected => ((SelectedLanguages >> 4) & 1) == 1;
+    public bool ChineseTraditionalSelected => ((SelectedLanguages >> 5) & 1) == 1;
+    public bool KoreanSelected => ((SelectedLanguages >> 6) & 1) == 1;
 
     public enum SocialMemberLanguage : byte {
         Japanese = 0,
         English = 1,
         German = 2,
         French = 3,
+        ChineseSimplified = 4,
+        ChineseTraditional = 5,
+        Korean = 6,
     }
 }

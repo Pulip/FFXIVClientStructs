@@ -143,16 +143,22 @@ public unsafe partial struct InfoProxyCommonList {
             En = 1,
             De = 2,
             Fr = 3,
+            Chs = 4,
+            Cht = 5,
+            Ko = 6,
             None = 0xFF
         }
 
         [Flags]
         public enum LanguageMask : byte {
             None = 0,
-            Jp = 1,
-            En = 2,
-            De = 4,
-            Fr = 8,
+            Jp = 1 << 0,
+            En = 1 << 1,
+            De = 1 << 2,
+            Fr = 1 << 3,
+            Chs = 1 << 4,
+            Cht = 1 << 5,
+            Ko = 1 << 6,
         }
     }
 
